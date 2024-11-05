@@ -17,7 +17,7 @@ function checarDados(){
         emailLog.style.color = "#01FD47"
         setTimeout(function(){
             alert(`Bom te ver de novo, ${nome}!\nClique em "OK" para ser redirecionado.`)
-            window.location.assign("https://z4ffarani.github.io/Formula-E-mmersive/src/pages/userPage/userPage.html");
+            window.location.href = "https://z4ffarani.github.io/Formula-E-mmersive/src/pages/userPage/userPage.html";
         }, 500)
     }
 }
