@@ -17,7 +17,7 @@ function checarDados(){
         emailLog.style.color = "#01FD47"
         setTimeout(function(){
             alert(`Bom te ver de novo, ${nome}!\nClique em "OK" para ser redirecionado.`)
-            window.location.href = "../../Formula-E-mmersive/src/pages/userPage/userPage.html";
+            window.location.href = "./src/pages/userPage/userPage.html";
         },500)
     }
 }
