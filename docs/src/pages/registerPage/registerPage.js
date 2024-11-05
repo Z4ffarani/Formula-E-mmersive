@@ -14,7 +14,7 @@ function armazenarDados(){
         sessionStorage.setItem('senha', document.getElementById("senha").value) //armazenando dados entre paginas
         setTimeout(function(){
             alert('Usuário cadastrado!\nClique em "OK" para ser redirecionado.')
-            window.location.href = ("../../../docs/index.html");
+            window.location.href = "../userPage/userPage.html";
         },500)
     } 
 }

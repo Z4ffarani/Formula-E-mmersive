@@ -15,9 +15,10 @@ function checarDados(){
     else if(email==loginEmail && senha==loginSenha){
         senhaLog.style.color = "#01FD47"
         emailLog.style.color = "#01FD47"
+        
         setTimeout(function(){
             alert(`Bom te ver de novo, ${nome}!\nClique em "OK" para ser redirecionado.`)
-            window.location.href = "https://z4ffarani.github.io/Formula-E-mmersive/src/pages/userPage/userPage.html";
+            window.location.href = "./src/pages/userPage/userPage.html";
         }, 500)
     }
 }
