@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmissão - Formula E•mmersive</title>
+    
+    <link rel="stylesheet" href="livePage.css">
+    <link rel="stylesheet" href="../../../public/css/fonts/fonts.css">
+    <link rel="stylesheet" href="../../../public/css/global.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../../pages/userPage/userPage.html"><img style="width: 58px;" class="logo-emmersive" src="../../../public/assets/images/FormulaE-Image/MiniLogo-Header.svg"></a>
+            <div class="headerBtns" onclick="underConstruction()">
+                <button class="scoreBtn">Score</button>
+                <span class="texto_Header" style="color: #101010">|</span>
+                <button class="challengesBtn">Desafios</button>
+                <span class="texto_Header" style="color: #101010">|</span>
+                <button class="newsBtn">
+                    <p class="texto_Header">News</p>
+                    <img class="header-minilogo" src="../../../public/assets/images/EsmallLogo.svg" alt="E logo">
+                </button>
+            </div>
+            <div class="profile">
+                <div class="name-blitz">
+                    <p class="username" id="username"></p>
+                    <div class="userSaldo">
+                        <img class="blitz-icon" src="../../../public/assets/images/blitz.png" alt="Blitz Icon">
+                        <p class="blitz-qtd" id="saldo-blitz"></p>
+                    </div>
+                </div>
+                <img id="moldura-user" class="moldura-user" src="../../../public/assets/images/blank-profile.png" alt="user-box">
+                <img class='header-deco' src="../../../public/assets/images/header-decoration.png" alt="decoração header">
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-cont">
+            <a href="#live">LIVE</a>
+            <a href="#placar">Placar</a>
+            <a href="#mapas">Mapas</a>
+            <a href="#destaques">Destaques</a>
+        </div>
+    </nav>
+    <main>
+<!-- section 1 -->
+        <div class="section-one" id="live">
+            <!-- GRID LIVE -->
+            <div class="livestream">
+                <div class="live">
+                    <div class="video-icons">
+                        <img  src="../../../public/assets/images/pause.png" alt="pause button">
+                        <div class="volume-fullscreen">
+                            <img  src="../../../public/assets/images/Audio.png" alt="audio bar">
+                            <img  src="../../../public/assets/images/Expand.png" alt="fullscreen">
+                        </div>
+                    </div>
+                    <div class="live-on">
+                        <h1><img class="live-dot" src="../../../public/assets/images/liveDot.png" alt="ponto live">LIVE</h1>
+                    </div>
+                </div>
+                <div class="live-title">
+                    <div class="competition-name">
+                        <img class="fia" src="../../../public/assets/images/fia.png" alt="FIA logo">
+                        <div class="title-live-text">
+                            <h1>E-PRIX - <span style="font-weight: 300;">SÃO PAULO</span></h1>
+                            <span class="title-live-division" style="font-size: 42px; color: blue; font-weight: bold; font-style: normal;">|</span>
+                            <h1>SEASON <span style="color: aqua;">10</span></h1>
+                        </div>
+                    </div>
+                    <p>Who do you think it’s going to win this race?! Vote now on the chat! Don’t forget to answer our quizzes during the intervals to get more blitz and change them for better prizes!</p>
+                    <p>Don’t forget to follow us on social media! Live is happening on Formula E’s official channel too.</p>
+                </div>
+                
+                <div class="live-comments">
+                    <div class="comments-live-bar item-0">
+                        <h1><img class="live-dot-bar" src="../../../public/assets/images/liveDot.png" alt="ponto live">LIVE</h1>
+                    </div>
+                    <div class="comentario item-1">
+                        <div>
+                            <img class="pfp" src="../../../public/assets/images/comment-pfp-1.png" alt="comment-pfp-1">
+                            <h1>Hep</h1>
+                        </div>
+                        <p>I was here since the beginning! Good Luck my team!</p>
+                    </div>
+
+                    <div class="comentario item-2">
+                        <div>
+                            <img class="pfp" src="../../../public/assets/images/comment-pfp-2.png" alt="comment-pfp-2">
+                            <h1>Jeff</h1>
+                        </div>
+                        <p>I will bet De Vries. Definitely he is going to win. Otherwise, the most popular in this season.</p>
+                    </div>
+
+                    <div class="comentario item-3">
+                        <div>
+                            <img class="pfp" src="../../../public/assets/images/comment-pfp-3.png" alt="comment-pfp-3">
+                            <h1>Alex</h1>
+                        </div>
+                        <p>OMG, SÃO PAULO!! VAMOS BRASIL</p>
+                    </div>
+
+                    <div class="comentario item-4">
+                        <div>
+                            <img class="pfp" src="../../../public/assets/images/comment-pfp-4.png" alt="comment-pfp-4">
+                            <h1>Zanery</h1>
+                        </div>
+                        <p>I’ve got 1.000 Blitz just for entering here. How cool is that?</p>
+                    </div>
+
+                    <div class="comentario item-5">
+                        <div>
+                            <img class="pfp" src="../../../public/assets/images/comment-pfp-5.png" alt="comment-pfp-5">
+                            <h1>User_5879</h1>
+                        </div>
+                        <p>Loving see eletric cars in competitions like that. Let’s save our nature with style!!</p>
+                    </div>
+                </div>
+
+                <div class="live-message-box">
+                    <div class="write-message">
+                        <input type="text" placeholder="Envie uma mensagem">
+                    </div>
+                    <div class="fanboost-choose">
+                        <h1>FANBOOST</h1>
+                        <h2>PILOTO ESCOLHIDO</h2>
+                        <div class="position-racer">
+                            <img class="attack-mini" src="../../../public/assets/images/attack-mini.png" alt="fannboost icon">
+                            <img src="../../../public/assets/images/Number.png" alt="1st Place">
+                            <img src="../../../public/assets/images/mahindra-racing.png" alt="scuderia: Mahindra Racing">
+                            <div>
+                                <h3>MAHINDRA RACE</h3>
+                                <p>DE VRIES</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SECTION 2 -->
+        <div class="section-two" id="placar">
+            <div class="rank">
+                <h1><img class="live-dot-bar" src="../../../public/assets/images/liveDot.png" alt="ponto live">PLACAR</h1>
+            </div>
+            <div class="vision">
+                <h1><img class="live-dot-bar" src="../../../public/assets/images/liveDot.png" alt="ponto live">VISÃO DOS PILOTOS</h1>
+            </div>
+            <!-- 1º lugar -->
+            <div class="position first">
+                <img class="status-icon" src="../../../public/assets/images/greenPlay.png" alt="boosted">
+                <div class="team-racer">
+                    <h2>MAHINDRA RACING</h2>
+                    <h1>DE VRIES</h1>
+                </div>
+                <div class="team-place">
+                    <img class="team" src="../../../public/assets/images/scuderias/MAHINDRA.png" alt="scuderia">
+                    <p>1</p>
+                </div>
+            </div>
+
+            <!-- 2º lugar -->
+            <div class="position second">
+                <img class="status-icon" src="../../../public/assets/images/greenPlay.png" alt="boosted">
+                <div class="team-racer">
+                    <h2>DS AUTOMOBILES</h2>
+                    <h1>VANDOORNE</h1>
+                </div>
+                <div class="team-place">
+                    <img class="team" src="../../../public/assets/images/scuderias/DS AUTO.png" alt="scuderia">
+                    <p>2</p>
+                </div>
+            </div>
+
+            <!-- 3º lugar -->
+            <div class="position third">
+                <img class="status-icon" src="../../../public/assets/images/Play.png" alt="without-boost">
+                <div class="team-racer">
+                    <h2>ANDRETTI</h2>
+                    <h1>NATO</h1>
+                </div>
+                <div class="team-place">
+                    <img class="team" src="../../../public/assets/images/scuderias/ANDRETTI.png" alt="scuderia">
+                    <p>3</p>
+                </div>
+            </div>
+
+            <!-- 4º lugar -->
+            <div class="position fourth">
+                <img class="status-icon" src="../../../public/assets/images/Play.png" alt="without-boost">
+                <div class="team-racer">
+                    <h2>EVISION RACING</h2>
+                    <h1>FROJS</h1>
+                </div>
+                <div class="team-place">
+                    <img class="team" src="../../../public/assets/images/scuderias/ENVISION.png" alt="scuderia">
+                    <p>4</p>
+                </div>
+            </div>
+
+            <!-- 5º lugar -->
+            <div class="position fifth">
+                <img class="status-icon" src="../../../public/assets/images/Play.png" alt="without-boost">
+                <div class="team-racer">
+                    <h2>ABT FORMULA E</h2>
+                    <h1> VAN DER LINDE</h1>
+                </div>
+                <div class="team-place">
+                    <img class="team" src="../../../public/assets/images/scuderias/ABT.png" alt="scuderia">
+                    <p>5</p>
+                </div>
+            </div>
+
+            <!-- 6º lugar -->
+            <div class="position sixth">
+                <img class="status-icon" src="../../../public/assets/images/Play.png" alt="without-boost">
+                <div class="team-racer">
+                    <h2>MAHINDRA RACING</h2>
+                    <h1>MORTARA</h1>
+                </div>
+                <div class="team-place">
+                    <img class="team" src="../../../public/assets/images/scuderias/MAHINDRA.png" alt="scuderia">
+                    <p>6</p>
+                </div>
+            </div>
+
+            <!-- 7º lugar -->
+            <div class="position seventh">
+                <img class="status-icon" src="../../../public/assets/images/Play.png" alt="without-boost">
+                <div class="team-racer">
+                    <h2>JAGUAR TCS RACING</h2>
+                    <h1>CASSIDY</h1>
+                </div>
+                <div class="team-place">
+                    <img class="team" src="../../../public/assets/images/scuderias/JAGUAR.png" alt="scuderia">
+                    <p>7</p>
+                </div>
+            </div>
+
+            <!-- 8º lugar -->
+            <div class="position eighth">
+                <img class="status-icon" src="../../../public/assets/images/Play.png" alt="without-boost">
+                <div class="team-racer">
+                    <h2>ERT FORMULA E</h2>
+                    <h1>TICKTUM</h1>
+                </div>
+                <div class="team-place">
+                    <img class="team" src="../../../public/assets/images/scuderias/ERT.png" alt="scuderia">
+                    <p>8</p>
+                </div>
+            </div>
+
+            <!-- 9º lugar -->
+            <div class="position ninth">
+                <img class="status-icon" src="../../../public/assets/images/Play.png" alt="without-boost">
+                <div class="team-racer">
+                    <h2>MAHINDRA RACING</h2>
+                    <h1>JORDAN KING</h1>
+                </div>
+                <div class="team-place">
+                    <img class="team" src="../../../public/assets/images/scuderias/MAHINDRA.png" alt="scuderia">
+                    <p>9</p>
+                </div>
+            </div>
+
+            <!-- 10º lugar -->
+            <div class="position tenth">
+                <img class="status-icon" src="../../../public/assets/images/Play.png" alt="without-boost">
+                <div class="team-racer">
+                    <h2>MASSERATI MSG</h2>
+                    <h1>DARUVALA</h1>
+                </div>
+                <div class="team-place">
+                    <img class="team" src="../../../public/assets/images/scuderias/MASERATI.png" alt="scuderia">
+                    <p>10</p>
+                </div>
+            </div>
+
+            <!-- 11º lugar -->
+            <div class="position eleventh">
+                <img class="status-icon" src="../../../public/assets/images/Play.png" alt="without-boost">
+                <div class="team-racer">
+                    <h2>MASSERATI MSG</h2>
+                    <h1>NIXON</h1>
+                </div>
+                <div class="team-place">
+                    <img class="team" src="../../../public/assets/images/scuderias/MASERATI.png" alt="scuderia">
+                    <p>11</p>
+                </div>
+            </div>
+
+            <!-- VISÃO DOS CORREDORES -->
+            <div class="runners-vision">
+                <!-- DEVRIES -->
+                <div class="runner-stts devries">
+                    <div class="runner-stts-content">
+                        <div class="header-cam">
+                            <div class="name-team">
+                                <img class="team-cam" src="../../../public/assets/images/scuderias/MAHINDRA.png" alt="team">
+                                <h1>DE VRIES</h1>
+                            </div>
+                            <div class="button-impulse">
+                                <button><img src="../../../public/assets/images/impulse.png" alt="impulse"><span>IMPULSIONADO</span></button>
+                            </div>
+                        </div>
+                        <div class="camera-status">
+                            <div class="cam-bkg ">
+                                <div class="gif-devriesbkg">
+                                    <div class="screen-icons">
+                                        <img class="pause" src="../../../public/assets/images/pause.png" alt="pausar">
+                                        <div class="audio-fullscreen">
+                                            <img class="audio" src="../../../public/assets/images/Audio.png" alt="audio bar">
+                                            <img class="fullscreen" src="../../../public/assets/images/Expand.png" alt="fullscreen">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="impulse">
+                                <div class="button-impulse-smartphone">
+                                    <button><img src="../../../public/assets/images/impulse.png" alt="impulse">IMPULSIONADO</button>
+                                </div>
+                                <h2>BATERIA</h2>
+                                <div class="time-status">
+                                    <div class="battery-bar">
+                                        <p class="battery">25 kWh</p>
+                                    </div>
+                                    <p class="time green">TEMPO + RAPIDO: <span style="color: #37FF4F">25 : 35 : 259</span></p>
+                                    <p class="time red">TEMPO + LENTO: <span style="color: #DD052C;">32: 24 : 109</span></p>
+                                    <p class="time red">ATTACK MODE: <span style="font-family: 'Montserrat', sans-serif; color: #DD052C;">DESATIVADO</span></p>
+                                </div>
+                                <div class="lap">
+                                    <h3>VOLTA</h3>
+                                    <h3>23 | 45</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="glow-hr">
+                <hr class="glow-hr">
+                <hr class="glow-hr">
+                
+
+                <!-- VANDOORNE -->
+                <div class="runner-stts vandoorne">
+                    <div class="runner-stts-content">
+                        <div class="header-cam">
+                            <div class="name-team">
+                                <img class="team-cam" src="../../../public/assets/images/scuderias/DS AUTO.png" alt="team">
+                                <h1>VANDOORNE</h1>
+                            </div>
+                            <div class="button-impulse">
+                                <button><img src="../../../public/assets/images/impulse-quest.png" alt="impulse"><span>IMPULSIONAR</span></button>
+                            </div>
+                        </div>
+                        <div class="camera-status">
+                            <div class="cam-bkg">
+                                <div class="gif-vandoornebkg">
+                                    <div class="screen-icons">
+                                        <img class="pause" src="../../../public/assets/images/pause.png" alt="pausar">
+                                        <div class="audio-fullscreen">
+                                            <img class="audio" src="../../../public/assets/images/Audio.png" alt="audio bar">
+                                            <img class="fullscreen" src="../../../public/assets/images/Expand.png" alt="fullscreen">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="impulse">
+                                <div class="button-impulse-smartphone">
+                                    <button><img src="../../../public/assets/images/impulse-quest.png" alt="impulse">IMPULSIONAR</button>
+                                </div>
+                                <h2>BATERIA</h2>
+                                <div class="time-status">
+                                    <div class="battery-bar">
+                                        <p class="battery">28 kWh</p>
+                                        <p class="fill-battery">.</p>
+                                    </div>
+                                    <p class="time green">TEMPO + RAPIDO: <span style="color: #37FF4F">25 : 35 : 259</span></p>
+                                    <p class="time red">TEMPO + LENTO: <span style="color: #DD052C;">32: 24 : 109</span></p>
+                                    <p class="time red">ATTACK MODE: <span style="font-family: 'Montserrat', sans-serif; color: #DD052C;">DESATIVADO</span></p>
+                                </div>
+                                <div class="lap">
+                                    <h3>VOLTA</h3>
+                                    <h3>23 | 45</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- APOSTAS -->
+            <div class="blitz-bet-invisible-bkg">
+                <div class="blitz-bet">
+                    <img class="blitz-bet-icon" src="../../../public/assets/images/blitz0bet.png" alt="blitz-bet-icon">
+                    <div class="bet-card left-side">
+                        <div class="bet-title">
+                            <h1><img class="live-dot-bar" src="../../../public/assets/images/liveDot.png" alt="ponto live">MULTIPLICADOR</h1>
+                            <h2>QUEM VENCERÁ?</h2>
+                        </div>
+                        <div class="choose-runner">
+                            <select class="select-runner" name="corredor" id="corredor" class="form-select">
+                                    <option value="" selected disabled>Selecione</option>
+                                    <option value="CASSIDY">CASSIDY</option>
+                                    <option value="DARUVALA">DARUVALA</option>
+                                    <option value="DE VRIES">DE VRIES</option>
+                                    <option value="FROJS">FROJS</option>
+                                    <option value="JORDAN KING">JORDAN KING</option>
+                                    <option value="MORTARA">MORTARA</option>
+                                    <option value="NATO">NATO</option>
+                                    <option value="NIXON">NIXON</option>
+                                    <option value="TICKTUM">TICKTUM</option>
+                                    <option value="VAN DER LINDE">VAN DER LINDE</option>
+                                    <option value="VANDOORNE">VANDOORNE</option>
+                            </select>
+                            <button class="check">
+                                <img src="../../../public/assets/images/white-check.png" alt="confirmar">
+                            </button>
+                        </div>
+                        <div class="choosen-place">
+                            <img class="choosen-team" src="../../../public/assets/images/scuderias/MAHINDRA.png" alt="team-bet">
+                            <div class="quantity-bet">
+                                <div>
+                                    <p>MAHINDRA RACING</p>
+                                    <h1>DE VRIES</h1>
+                                </div>
+                                <p class="qttBlitz-bet" id="blitz-bet">0</p>
+                            </div>
+                        </div>
+                        <div class="add-guess">
+                            <img class="blitz-guess" src="../../../public/assets/images/Blitz-letter.png" alt="Blitz">
+                            <div class="more-minus-btns">
+                                <button class="more-btn" id="maisBtn">+</button>
+                                <button class="minus-btn" id="menosBtn">-</button>
+                                <img src="../../../public/assets/images/blue blitz.png" alt="blitz blue">
+                            </div>
+                        </div>
+                        <p class="low-res-bet-p" style="font-weight: 400; font-family: 'Michroma', sans-serif; font-size: 7px; margin-bottom: 10px;">APOSTE SEUS BLITZ: ESCOLHA UM CORREDOR OU SCUDERIA</p>
+                    </div>
+                    <div class="bet-card right-side">
+                        <div class="big-blitz">
+                            <img src="../../../public/assets/images/blitz.png" alt="BLITZ-ICON">
+                            <h1 class="big-blitz" id="multiplicado">0</h1>
+                        </div>
+                        <h2>MULTIPLICADORES</h2>
+                        <div class="multiplicadores">
+                            <div class="multi">
+                                <img src="../../../public/assets/images/scuderias/MAHINDRA.png" alt="MAHINDRA LOGO">
+                                <div class="h1-gold">
+                                    <h1>CORREDOR</h1>
+                                </div>
+                                <div class="p-green">
+                                    <p>4X</p>
+                                </div>
+                            </div>
+                            <div class="multi">
+                                <img src="../../../public/assets/images/scuderias/MAHINDRA.png" alt="MAHINDRA LOGO">
+                                <div class="h1-gold">
+                                    <h1>SCUDERIA</h1>
+                                </div>
+                                <div class="p-green">
+                                    <p>2X</p>
+                                </div>
+                            </div>
+                            <p class="low-res-bet-p" style="font-weight: 400; font-family: 'Michroma', sans-serif; font-size: 7px; color: #37FF4F; width: 100%; text-align: center;">COMPETIÇÃO EM ANDAMENTO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- SEÇÃO 3-->
+        <div class="section-three" id="mapas">
+            <div class="little-e-sec-three">
+                <img src="../../../public/assets/images/EsmallLogo.svg" alt="Formula E">
+            </div>
+            <div class="maps">
+                <div class="map-titles">
+                    <div class="container-text-shadow">
+                        <h1 class="conheca atras">MAPA</h1>
+                        <h1 class="conheca frente">MAPA</h1>
+                    </div>
+                    <span style="font-size: 64px;">|</span>
+                    <div class="container-text-shadow">
+                        <h1 class="conheca atras">SEASON 10</h1>
+                        <h1 class="conheca frente">SEASON <span style="color: aqua;">10</span></h1>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div class="imgcontainer">
+                        <img src="../../../public/assets/images/map.png" alt="mapa">
+                        <img src="../../../public/assets/images/mapRealLife.png" alt="mapa real">
+                    </div>
+                </div>
+                <div class="map-name">
+                    <p>SÃO PAULO - ANHEMBI</p>
+                </div>
+            </div>
+        </div> 
+        <!-- Seção 4 -->
+        <div class="section-four" id="destaques">
+            <div class="little-e-sec-four">
+                <img src="../../../public/assets/images/EsmallLogo.svg" alt="Formula E">
+            </div>
+            <div class="destaque-title">
+                <img src="../../../public/assets/images/crown.png" alt="coroa">
+                <div class="container-text-shadow-destaque">
+                    <h1 class="destaque atras" style="-webkit-text-stroke: 1px #C99B26; font-style: normal;">DESTAQUES</h1>
+                    <h1 class="destaque frente" style="color: #C99B26; font-style: normal;">DESTAQUES</h1>
+                </div>
+            </div>
+            <div class="vod">
+                <div class="vod-header">
+                    <p>TOCANDO AGORA:</p>
+                    <p style="color: #DD052C;">E-tron</p>
+                </div>
+                <img class="vod-img" src="../../../public/assets/images/destaque-vod.png" alt="VOD">
+            </div>
+            <div class="sample-chooser">
+                <img class="passar" src="../../../public/assets/images/passarLeft.png" alt="passador esquerda">
+                <div class="samples">
+                    <p class="three-dots-p">. . . </p>
+                    <img src="../../../public/assets/images/Rectangle 145.png" alt="sample">
+                    <img src="../../../public/assets/images/item raro.png" alt="sample">
+                    <img src="../../../public/assets/images/Rectangle 146.png" alt="sample">
+                    <p class="three-dots-p">. . . </p>
+                </div>
+                <img class="passar" src="../../../public/assets/images/passarRight.png" alt="passador direita">
+            </div>
+        </div>
+    </main>
+    <script src="livePage.js"></script>
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h1>NONONO</h1>
+                <p>XX XXXXX-XXXX</p>
+            </div>
+            <img style="width: 58px;" src="../../../public/assets/images/FormulaE-Image/MiniLogo-Footer.png" alt="Formula Emmersive BLACK LOGO"
+                class="footer-logo">
+        </div>
+    </footer>
+</body>
+</html>

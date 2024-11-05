@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE - Formula E•mmersive</title>
+    
+    <link rel="stylesheet" href="formulaE.css">
+    <link rel="stylesheet" href="../../../public/css/fonts/fonts.css">
+    <link rel="stylesheet" href="../../../public/css/global.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="../../pages/userPage/userPage.html"><img style="width: 58px;" class="logo-emmersive" src="../../../public/assets/images/FormulaE-Image/MiniLogo-Header.svg"></a>
+            <div class="profile">
+                <div class="name-blitz">
+                    <p class="username" id="username">Usuário</p>
+                    <div class="userSaldo">
+                        <img class="blitz-icon" src="../../../public/assets/images/blitz.png" alt="Blitz Icon">
+                        <p class="blitz-qtd" id="saldo-blitz"></p>
+                    </div>
+                </div>
+                <img id="moldura-user" class="moldura-user" src="../../../public/assets/images/blank-profile.png" alt="user-box">
+                <img class='header-deco' src="../../../public/assets/images/header-decoration.png" alt="decoração header">
+            </div>
+        </div>
+    </header>
+    <div class="header-bar"></div>
+    <main>
+        <div class="top-deco"><img class="topPageFE-deco" src="../../../public/assets/images/topPageFE-deco.png" alt="background-decoration"></div>
+        <div class="FE-content">
+            <div class="carrossel">
+                <img class="logoFullBlue" src="../../../public/assets/images/FORMULA E FULL BLUE.png" alt="LOGO FORMULA E">
+                <div class="carrossel-btns">
+                    <a href="#">Compartilhar</a>
+                    <div class="slide-btns">
+                        <button class="left" id="voltBtn">&lt;</button>
+                        <button class="right" id="proxBtn" onclick="proximoSlideFormulaE()">></button>
+                    </div>
+                </div>
+                <div class="slide-container">
+                    <div class="slides" id="carrossel">
+                        <div class="slide"><img src="../../../public/assets/images/carrosselFE-1.png" alt="slide1" id="slideImg"></div>
+                        <div class="slide"><img src="../../../public/assets/images/carrosselFE-2.png" alt="slide2" id="slideImg"></div>
+                        <div class="slide"><img src="../../../public/assets/images/carrosselFE-3.png" alt="slide3" id="slideImg"></div>
+                        <div class="slide"><img src="../../../public/assets/images/carrosselFE-4.png" alt="slide4" id="slideImg"></div>
+                        <div class="slide"><img src="../../../public/assets/images/carrosselFE-5.png" alt="slide5" id="slideImg"></div>
+                    </div>
+                </div>
+                <div class="slide-text-container">
+                    <div class="slides-textos" id="carrosselTexto">
+                        <div class="slide-text"><p>Você sabia que os carros da <span style="color: #2210F4;">Fórmula E</span> possuem uma opção que ativa um "boost" durante a corrida? Chama-se <span style="color: #2210F4;">Attack Mode</span>, e dá ao carro cerca de 25 kW de impulso, permitindo aos pilotos ultrapassar os adversários e obter posições melhores!</p></div>
+                        <div class="slide-text"><p>Lorem ipsum dolor, sit amet consectetur <span style="color: #2210F4;">adipisicing elit</span>. Vitae dolorum facere earum, libero, minima enim maiores provident nostrum, et est commodi laboriosam odio excepturi voluptate. Neque ullam autem dicta dolorum.</p></div>
+                        <div class="slide-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam <span style="color: #2210F4;">perferendis</span> eos unde optio perspiciatis mollitia hic. Consequuntur eaque blanditiis inventore, illo sed repellendus cum consectetur vel aperiam non tempore excepturi.</p></div>
+                        <div class="slide-text"><p>Lorem ipsum <span style="color: #2210F4;">dolor sit</span> amet consectetur adipisicing elit. Sint quidem libero nostrum dolorum eligendi velit magnam, iure hic placeat est ratione dolor, repudiandae eius quia eum cumque impedit, quod architecto.</p></div>
+                        <div class="slide-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat molestiae ex libero reiciendis hic <span style="color: #2210F4;">laudantium excepturi</span> ea iusto velit maiores reprehenderit nam, architecto adipisci facere in culpa est? Assumenda, consequatur!</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="redirect">
+            <a href="../../pages/FExF1/formula1.html" onclick="proximaPagina()"> <img src="../../../public/assets/images/F1-MiniLogo.png" alt="F1 mini logo"></a>
+            <span style="font-size: 48px; font-weight: 100;">|</span>
+            <a href="../../pages/FExF1/formula1.html" style="text-decoration: underline;" onclick="proximaPagina()">Sobre: Formula 1</a>
+        </div>
+        <div class="bottomPage-deco"><img class="bottomPageFE-deco" src="../../../public/assets/images/bottomPageFE-deco.png" alt=" background-decoration"></div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h1>NONONO</h1>
+                <p>XX XXXXX-XXXX</p>
+            </div>
+            <img style="width: 58px;" src="../../../public/assets/images/FormulaE-Image/MiniLogo-Footer.png" alt="Formula Emmersive BLACK LOGO"
+                class="footer-logo">
+        </div>
+    </footer>
+    <script src="FExF1.js"></script>
+</body>
+</html>

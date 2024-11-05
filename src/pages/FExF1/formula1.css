@@ -1,0 +1,789 @@
+@font-face {
+    font-family: 'Formula';
+    src: url('../../../public/css/fonts/Formula1-Regular.otf') format('opentype');
+         
+}
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #101010;
+    color: white;
+}
+
+/* HEADER */
+header{
+    max-width: 100%;
+    height: 80px;
+    background-color: #101010;
+}
+
+.header-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.logo-emmersive{
+    width: 140px;
+    cursor: pointer;
+}
+
+.profile{
+    position: inherit;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.header-deco{
+    height: 80px;
+    position: absolute;
+    background-color: transparent;
+    z-index: -1;
+    width: 100px;
+} 
+
+.name-blitz{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.blitz-qtd{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(251,226,1);
+}
+
+.blitz-icon{
+    width: 15px;
+    height: 20px;
+    
+}
+
+.moldura-user{
+    width: 50px;
+    height: 50px;
+}
+
+.userSaldo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* HEADER BAR */
+.header-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ff0000;
+    height: 20px;
+}
+/* MAIN */
+main{
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.topPageF1-deco{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.middlePageF1-deco{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    
+}
+
+.bottomPageF1-deco{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.F1-content{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 80px;
+    background-image: url("../../../public/assets/images/middlePageF1-deco.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 900px 900px;
+    background-repeat: no-repeat;
+}
+
+.F1-logo{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+
+.carrossel-btns{
+    max-width: 470px;
+    width: 470px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.carrossel-btns a{
+    color: white;
+    font-size: 14px;
+    padding: 0;
+}
+
+.slide-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-btns button{
+    color: white;
+    background-color: #ff0000;
+    border: none;
+    width: 60px;
+    height: 30px;
+    font-size: 32px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-btns .left{
+    font-family: "Formula", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+
+.slide-btns .right{
+    font-family: "Formula", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+
+.carrossel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slide-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    height: 300px;
+    padding: 10px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slide-container img{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.slides{
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 10px;
+}
+
+.slide{
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.slides{
+    position: relative;
+    z-index: 3;
+}
+
+.F1-content p{
+    font-family: "Numans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 80px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.slide-text-container{
+    display: flex;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.slides-textos{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide-text{
+    min-width: 100%;
+}
+
+
+/* BORDA CARROSSEL */
+.slide-container:before, .slide-container:after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #101010,#ff4242, #ff0000, #0f0101, #101010, #0f0101,  #ff0000, #ff4242, #101010);
+    background-size: 600%;
+    animation: AnimarBorda 30s linear infinite;
+}
+
+.slide-container:after{
+    position: absolute;
+    top: 0;
+    filter: blur(10px);
+}
+
+@keyframes AnimarBorda {
+    0%{
+        background-position: 600%;
+    }
+    100%{
+        background-position: 0;
+    }    
+} 
+
+.redirect{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+    padding: 0 0 40px 0;
+}
+
+.redirect img{
+    padding: 8px 0 0 0 ;
+}
+
+
+.redirect a{
+    color: white;
+    font-family: 'Michroma', sans-serif;
+}
+
+
+/* FOOTER */
+footer{
+    width: 100;
+    height: 80px;
+    background-color: #ff0000;
+
+}
+
+.footer-content{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+.footer-content h1{
+    font-size: 18px;
+}
+
+.footer-logo{
+    width: 150px;
+}
+
+@media (max-width: 425px) {
+    /* HEADER */
+    header{
+       height: 60px;
+   }
+
+   .header-content{
+       max-width: 320px;
+       display: flex;
+       justify-content: space-around;
+   }
+
+   .logo-emmersive{
+       width: 80px;
+   }
+
+   .header-deco{
+       height: 60px;
+       width: 75px;
+   }
+
+   .name-blitz{
+       font-size: 12px;
+   }
+   
+   .blitz-icon{
+       width: 10px;
+       height: 15px;
+       
+   }
+
+   .moldura-user{
+       width: 35px;
+       height: 35px;
+   }
+
+   .username{
+        font-size: 10px;
+    }  
+   /* HEADER BAR */
+   .header-bar{
+       height: 8px;
+   }
+
+   .F1-logo{
+       max-width: 260px;
+       margin-bottom: 15px;
+   }
+   
+   .bottomPageF1-deco{
+       max-width: 150px;
+       max-height: 150px;
+
+   }
+
+   .bottomPage-deco{
+        position: absolute;
+        left: 0;
+        z-index: -1;
+   }
+   
+
+    .top-deco img{
+       max-width: 240px;
+   }
+
+    .bottomPage-deco{
+        position: absolute;
+        left: 0;
+        z-index: -1;
+   }
+
+   main{
+       max-width: 320px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       overflow: auto;
+   }
+
+   /* CONTEUDO F1 */
+   .F1-content{
+       max-width: 320px;
+       margin: 0 auto;
+       padding-top: 20px;
+       background: none;
+   
+   }
+   
+   .carrossel-btns{
+       max-width: 320px;
+       margin: 0 auto;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   
+   .carrossel-btns a{
+       color: white;
+       font-size: 12px;
+       padding: 0;
+   }
+   
+   .slide-btns button{
+       width: 30px;
+       height: 20px;
+   }
+
+   .slide-btns .left{
+    font-size: 24px;
+    }
+
+
+    .slide-btns .right{
+    font-size: 24px;
+    }
+
+   .F1-content p{
+       font-family: "Numans", sans-serif;
+       text-align: center;
+       margin-top: 30px;
+       width: 100%;
+       padding-bottom: 20px;
+   }
+   
+   
+   .slide-container{
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       max-width: 320px;
+       height: 210px;
+       padding: 10px;
+       overflow: hidden;
+       margin: auto;
+   }
+      
+   .slides{
+       display: flex;
+       transition: transform 0.5s ease;
+       gap: 20px;
+   }
+   
+   .slide-text-container{
+       max-width: 320px;
+   }
+   
+   .slides-textos{
+       display: flex;
+       transition: transform 0.5s ease;
+       font-size: 12px;
+       width: 320px;
+   }
+
+   .redirect{
+       max-width: 320px;
+       justify-content: center;
+       gap: 10px;
+       padding: 0 0 20px 0;
+   }
+   
+   .redirect img{
+       padding: 8px 0 0 0 ;
+       width: 45px;
+   }
+   
+   
+   .redirect a{
+       color: white;
+       font-family: 'Formula', sans-serif;
+       font-size: 12px;
+   }
+    
+   
+   /* FOOTER */
+   footer{
+       height: 60px;
+   }
+   
+   .footer-content{
+       max-width: 320px;
+   }
+   
+   .footer-content h1{
+       font-size: 12px;
+   }
+
+   .footer-content p{
+       font-size: 10px;
+   }
+
+   .footer-logo{
+       width: 80px;
+   }
+
+}
+
+/* RESPONSIVIDADE TABLETS */
+@media (min-width: 426px) and (max-width: 768px){
+   /* HEADER */
+   header{
+       height: 60px;
+   }
+
+   .header-content{
+       max-width: 425px;
+       display: flex;
+       justify-content: space-around;
+   }
+
+   .logo-emmersive{
+       width: 110px;
+   }
+
+   .header-deco{
+       height: 60px;
+       width: 80px;
+   }
+
+   .name-blitz{
+       font-size: 14px;
+   }
+
+   .blitz-icon{
+       width: 10px;
+       height: 15px;
+   }
+
+   .moldura-user{
+       width: 35px;
+       height: 35px;
+   }
+
+   /* HEADER BAR */
+   .header-bar{
+       height: 10px;
+   }
+
+   .F1-logo{
+        padding-top: 70px;
+        max-width: 300px;
+        margin-bottom: 15px;
+   }
+
+   .bottomPage-deco{
+       right: 30%;
+   }
+   
+   .bottomPageF1-deco{
+       max-width: 200px;
+       max-height: 150px;
+   }
+
+   .top-deco img{
+       max-width: 240px;
+   }
+
+    .bottomPage-deco{
+        position: absolute;
+        left: 0;
+        z-index: -1;
+   }
+   
+   .topPageF1-deco{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 400px;
+    }
+
+   main{
+       max-width: 425px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       overflow: auto;
+   }
+
+   /* CONTEUDO F1 */
+   .F1-content{
+       max-width: 425px;
+       margin: 0 auto;
+       padding-top: 20px;
+       background: none;
+
+   }
+
+   .carrossel-btns{
+       max-width: 425px;
+       margin: 0 auto;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   .carrossel-btns a{
+       color: white;
+       font-size: 14px;
+       padding: 0;
+   }
+
+   .slide-btns button{
+       border: none;
+       width: 35px;
+       height: 20px;
+       font-size: 10px;
+   }
+
+   .F1-content p{
+       font-family: "Numans", sans-serif;
+       text-align: center;
+       margin-top: 30px;
+       width: 100%;
+       padding-bottom: 20px;
+   }
+
+
+   .slide-container{
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       max-width: 425px;
+       height: 275px;
+       padding: 10px;
+       overflow: hidden;
+       margin: auto;
+   }
+   
+   .slides{
+       display: flex;
+       transition: transform 0.5s ease;
+       gap: 20px;
+   }
+
+   .slide-text-container{
+       max-width: 425px;
+   }
+
+   .slides-textos{
+       display: flex;
+       transition: transform 0.5s ease;
+       font-size: 14px;
+       width: 425px;
+   }
+
+   .slide-btns .left{
+        font-size: 24px;
+    }
+
+
+    .slide-btns .right{
+        font-size: 24px;
+    }
+
+   .redirect{
+       width: 425px;
+       justify-content: center;
+       gap: 10px;
+       padding: 0 0 20px 0;
+   }
+
+   .redirect img{
+       padding: 8px 0 0 0 ;
+       width: 50px;
+   }
+
+
+   .redirect a{
+       color: white;
+       font-family: 'Formula', sans-serif;
+       font-size: 14px;
+   }
+   
+   /* FOOTER */
+   footer{
+       height: 60px;
+   }
+
+   .footer-content{
+       max-width: 425px;
+   }
+
+   .footer-content h1{
+       font-size: 14px;
+   }
+
+   .footer-content p{
+       font-size: 14px;
+   }
+
+   .footer-logo{
+       width: 110px;
+   }
+}
+
+/* RESPONSIVIDADE LAPTOPS */
+/* O DESIGN POR SI SÓ JA É RESPONSIVO */
+@media (min-width: 769px){
+   .redirect{
+       padding: 0;
+   }
+
+   .F1-content p{
+       font-family: "Numans", sans-serif;
+       text-align: center;
+       margin-top: 30px;
+       width: 100%;
+       padding-bottom: 10px;
+   }
+
+   main{
+       overflow: auto;
+   }
+
+   .bottomPage-deco{
+       position: absolute;
+       left: 0;
+       z-index: -1;
+   }
+   
+   .bottomPageF1-deco{
+        width: 250px;
+   }
+
+   .topPageF1-deco{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 500px;
+    }
+
+    .slides{
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 10px;
+    }
+}

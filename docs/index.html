@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Formula E•mmersive</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../public/css/fonts/fonts.css">
+    <link rel="stylesheet" href="../public/css/global.css">
+</head>
+<body>
+    <img class="logo" src="../public/assets/images/nova-logo-formula-emmersive.png" alt="LOGO FORMULA EMMERSIVE">
+    <div class="sign-in-box">
+        <div class="input-and-title">
+            <h1>Boas vindas</h1>
+            <div class="campo-preencher">
+                <div class="emailUser">
+                    <label id="emailLog" for="email">E-mail:</label>
+                    <input class='email' type="text" id="loginEmail">
+                </div>
+                <div class="senhaUser">
+                    <label id="senhaLog" for="senha">Senha:</label>
+                    <input class='senha' type="password" id="loginSenha">
+                    <a href="../src/pages/registerPage/registerPage.html">Esqueci minha senha</a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-agreement">
+            <button class="acessar" onclick="checarDados()">Acessar</button>
+            <button class="primeiro-acesso"><a class="first-access" href="../src/pages/registerPage/registerPage.html">Primeiro acesso</a></button>
+        </div>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>
