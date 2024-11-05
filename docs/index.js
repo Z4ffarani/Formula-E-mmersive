@@ -10,14 +10,14 @@ function checarDados(){
         emailLog.style.color = "red"
         setTimeout(function(){
             alert("E-mail ou senha incorretos!\nTente novamente.")
-        },500)
+        }, 500)
     }
     else if(email==loginEmail && senha==loginSenha){
         senhaLog.style.color = "#01FD47"
         emailLog.style.color = "#01FD47"
         setTimeout(function(){
             alert(`Bom te ver de novo, ${nome}!\nClique em "OK" para ser redirecionado.`)
-            window.location.href = "../docs/src/pages/userPage/userPage.html";
-        },500)
+            window.location.href = "./src/pages/userPage/userPage.html";
+        }, 500)
     }
 }
